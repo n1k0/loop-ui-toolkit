@@ -20,7 +20,7 @@
  */
 .cf:before,
 .cf:after {
-  content: " "; /* 1 */
+  content: " ";   /* 1 */
   display: table; /* 2 */
 }
 
@@ -35,14 +35,14 @@ body {
   margin: 1em auto;
 }
 
+img {
+  border: none;
+}
+
 /* Panel styles */
 
 .spacer {
   margin-bottom: 1em;
-}
-
-iframe {
-  border: none;
 }
 
 .share {
