@@ -45,7 +45,9 @@
       </p>
       <p>Use webcam <select><option>Foo</option></select></p>
       <p>Use whatever <select><option>Long foo is long indeed</option></select></p>
-      <p class="preview cf">Preview <video></video></p>
+      <p class="preview cf">
+        Preview <video src="http://techslides.com/demos/sample-videos/small.ogv"></video>
+      </p>
     </form>
     <div class="link">
       <p><input type="url" value="http://loop.im/plop75"></p>
@@ -59,15 +61,14 @@
 
   <div class="conversation">
     <nav class="controls">
-      <button>Start a video call</button>
-      <button>Start an audio call</button>
-      <button>Hang up</button>
-      <button>Mute microphone</button>
-      <button>Mute peer's audio</button>
+      <button>Start</button>
+      <button>Stop</button>
+      <button>Mute audio</button>
+      <button>Mute video</button>
     </nav>
     <div class="media">
-      <video class="remote"></video>
-      <video class="local"></video>
+      <video class="remote" src="http://techslides.com/demos/sample-videos/small.ogv"></video>
+      <video class="local" src="http://techslides.com/demos/sample-videos/small.ogv"></video>
     </div>
   </div>
 </body>

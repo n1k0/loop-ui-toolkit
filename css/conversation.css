@@ -6,4 +6,25 @@
 
 .conversation .controls {
   background: #f2f2f2;
+  padding: .5em;
+}
+
+.conversation .media {
+  position: relative;
+}
+
+.conversation .media video {
+  background: #eee;
+}
+
+.conversation .media .local {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  max-width: 10em;
+}
+
+.conversation .media .remote {
+  width: 100%;
+  background: #fff;
 }
