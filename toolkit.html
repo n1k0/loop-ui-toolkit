@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/.  -->
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Loop UI toolkit</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Loop UI toolkit</h1>
+
+  <h2>Share panel</h2>
+
+  <div class="share">
+    <form class="configure">
+      <p>
+        Share this link with a friend to
+        <select>
+          <option>browse together</option>
+          <option selected="selected">video chat</option>
+          <option>audio chat</option>
+          <option>text chat</option>
+        </select>
+      </p>
+      <p>Use webcam <select><option>Foo</option></select></p>
+      <p>Use whatever <select><option>Long foo is long indeed</option></select></p>
+      <p class="preview cf">Preview <video></video></p>
+    </form>
+    <div class="link">
+      <p><input type="url" value="http://loop.im/plop75"></p>
+      <p>Your name will appear as <a href="">Unnamed</a>.</p>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <h2>Conversation window</h2>
+
+  <div class="conversation">
+    <nav class="controls">
+      <button>Start a video call</button>
+      <button>Start an audio call</button>
+      <button>Hang up</button>
+      <button>Mute microphone</button>
+      <button>Mute peer's audio</button>
+    </nav>
+    <div class="media">
+      <video class="remote"></video>
+      <video class="local"></video>
+    </div>
+  </div>
+</body>
+</html>
