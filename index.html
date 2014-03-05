@@ -32,7 +32,7 @@
 
   <h2>Share panel</h2>
 
-  <h3>1. Simple</h3>
+  <h3>Simple</h3>
 
   <div class="share">
     <form class="configure">
@@ -44,7 +44,7 @@
     </div>
   </div>
 
-  <h3>2. Featuring options</h3>
+  <h3>Featuring options</h3>
 
   <div class="share">
     <form class="configure">
@@ -69,7 +69,7 @@
         </label>
       </p>
       <p class="preview cf">
-        Preview <video src="http://techslides.com/demos/sample-videos/small.ogv"></video>
+        Preview <video></video>
       </p>
     </form>
     <div class="link">
@@ -83,37 +83,76 @@
   <p><em>The conversation component adapts automatically to its container to
     occupy all the available space.</em></p>
 
-  <h3>1. Large</h3>
+  <h3>Large</h3>
 
   <div class="conversation">
-    <div class="media">
-      <video class="remote" src="http://techslides.com/demos/sample-videos/small.ogv"></video>
-      <video class="local" src="http://techslides.com/demos/sample-videos/small.ogv"></video>
+    <div class="media nested">
+      <video class="remote"></video>
+      <video class="local"></video>
     </div>
   </div>
 
-  <h3>2. Large with controls</h3>
+  <h3>Large with controls</h3>
 
   <div class="conversation">
     <nav class="controls">
-      <button>Start</button>
-      <button>Stop</button>
+      <button class="btn">Start</button>
+      <button class="btn">Stop</button>
     </nav>
-    <div class="media">
-      <video class="remote" src="http://techslides.com/demos/sample-videos/small.ogv"></video>
-      <video class="local" src="http://techslides.com/demos/sample-videos/small.ogv"></video>
+    <div class="media nested">
+      <video class="remote"></video>
+      <video class="local"></video>
     </div>
   </div>
 
-  <h3>3. Small (think chat window)</h3>
+  <h3>Small (think chat window)</h3>
 
   <div style="width: 204px">
     <div class="conversation">
-      <div class="media">
-        <video class="remote" src="http://techslides.com/demos/sample-videos/small.ogv"></video>
-        <video class="local" src="http://techslides.com/demos/sample-videos/small.ogv"></video>
+      <div class="media nested">
+        <video class="remote"></video>
+        <video class="local"></video>
       </div>
     </div>
   </div>
+
+  <h3>Side by side</h3>
+
+  <div class="conversation">
+    <div class="media side-by-side">
+      <video class="remote"></video>
+      <video class="local"></video>
+    </div>
+  </div>
+
+  <h2>Buttons</h2>
+
+  <h3>Using <code>&lt;a&gt;</code></h3>
+
+  <p>
+    <a href="" class="btn">default</a>
+    <a href="" class="btn btn-info">info</a>
+    <a href="" class="btn btn-success">success</a>
+    <a href="" class="btn btn-warning">warning</a>
+    <a href="" class="btn btn-danger">danger</a>
+  </p>
+
+  <h3>Using <code>&lt;button&gt;</code></h3>
+
+  <p>
+    <button class="btn">default</button>
+    <button class="btn btn-info">info</button>
+    <button class="btn btn-success">success</button>
+    <button class="btn btn-warning">warning</button>
+    <button class="btn btn-danger">danger</button>
+  </p>
+
+  <script>
+  window.onload = function() {
+    [].forEach.call(document.querySelectorAll("video"), function(video) {
+      video.setAttribute("src", "http://techslides.com/demos/sample-videos/small.ogv");
+    });
+  }
+  </script>
 </body>
 </html>

@@ -2,6 +2,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+/* Generic rules */
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  font-size: .9em; /* for some reason, text is larger within <button> */
+}
+
 /* Helpers */
 
 /**
@@ -25,4 +35,30 @@
 
 img {
   border: none;
+}
+
+.btn {
+  display: inline-block;
+  background: #aaa;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  padding: .25em .5em .3em;
+  border-radius: .2em;
+}
+
+.btn-info {
+  background: #428BCA;
+}
+
+.btn-success {
+  background: #5cb85c;
+}
+
+.btn-warning {
+  background: #f0ad4e;
+}
+
+.btn-danger {
+  background: #d9534f;
 }

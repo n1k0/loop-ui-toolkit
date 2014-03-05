@@ -9,15 +9,21 @@
   padding: .5em;
 }
 
-.conversation .media {
-  position: relative;
-}
-
 .conversation .media video {
   background: #eee;
 }
 
-.conversation .media .local {
+/* Nested video elements */
+
+.conversation .media.nested {
+  position: relative;
+}
+
+.conversation .media.nested .remote {
+  width: 100%;
+}
+
+.conversation .media.nested .local {
   position: absolute;
   bottom: .8em;
   right: .8em;
@@ -25,7 +31,13 @@
   max-width: 140px;
 }
 
-.conversation .media .remote {
-  width: 100%;
-  background: #fff;
+/* Side by side video elements */
+
+.conversation .media.side-by-side .remote {
+  width: 50%;
+  float: left;
+}
+
+.conversation .media.side-by-side .local {
+  width: 50%;
 }
