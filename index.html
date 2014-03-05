@@ -32,6 +32,22 @@
 
   <h2>Share panel</h2>
 
+  <h3>1. Simple</h3>
+
+  <div class="share">
+    <form class="configure">
+      <p>This is a simple message.</p>
+    </form>
+    <div class="link">
+      <p><input type="url" value="http://loop.im/plop75"></p>
+      <p>Your name will appear as <a href="">Unnamed</a>.</p>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <h3>2. Featuring options</h3>
+
   <div class="share">
     <form class="configure">
       <p class="field">
@@ -68,16 +84,43 @@
 
   <h2>Conversation window</h2>
 
+  <p><em>The conversation component adapts automatically to its container to
+    occupy all the available space.</em></p>
+
+  <h3>1. Large</h3>
+
+  <div class="conversation">
+    <div class="media">
+      <video class="remote" src="http://techslides.com/demos/sample-videos/small.ogv"></video>
+      <video class="local" src="http://techslides.com/demos/sample-videos/small.ogv"></video>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <h3>2. Large with controls</h3>
+
   <div class="conversation">
     <nav class="controls">
       <button>Start</button>
       <button>Stop</button>
-      <button>Mute audio</button>
-      <button>Mute video</button>
     </nav>
     <div class="media">
       <video class="remote" src="http://techslides.com/demos/sample-videos/small.ogv"></video>
       <video class="local" src="http://techslides.com/demos/sample-videos/small.ogv"></video>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <h3>3. Small (think chat window)</h3>
+
+  <div style="width: 204px">
+    <div class="conversation">
+      <div class="media">
+        <video class="remote" src="http://techslides.com/demos/sample-videos/small.ogv"></video>
+        <video class="local" src="http://techslides.com/demos/sample-videos/small.ogv"></video>
+      </div>
     </div>
   </div>
 </body>
