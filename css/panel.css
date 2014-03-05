@@ -18,6 +18,11 @@
   padding: 1em 1em 0 4em;
 }
 
+.share .configure .field {
+  padding-bottom: 1em;
+  border-bottom: 1px dotted #ddd;
+}
+
 .share .configure select {
   float: right;
 }
